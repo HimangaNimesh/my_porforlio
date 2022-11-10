@@ -1,0 +1,47 @@
+.skills__container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill{
+    background: var(--color-bg-variant);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.skill_icon{
+    font-size: 2rem;
+}
+
+.skill:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    
+}
+
+@media screen and (max-width:1024px) {
+    .project__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+    
+
+@media screen and (max-width:600px) {
+    .skills__container{
+        width: var(--container-width-sm);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: var(--container-width-sm);
+    }
+    
+}
+
